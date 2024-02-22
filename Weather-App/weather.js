@@ -66,25 +66,25 @@ inputField.addEventListener("keyup" , function (event) {
             windSpeed.innerHTML = `${Math.round(dataToJson.wind.speed)}Km/H`
 
             if(dataToJson.weather[0].id >= 200  && dataToJson.weather[0].id <= 232){
-                image.src = "./images/storm.png"
+                image.src = "Weather-App/images/storm.png"
             }
             else if(dataToJson.weather[0].id >= 300  && dataToJson.weather[0].id <= 321){
-                image.src = "./images/rain.png"
+                image.src = "Weather-App/images/rain.png"
             }
             else if(dataToJson.weather[0].id >= 500  && dataToJson.weather[0].id <= 531){
-                image.src = "./images/rain.png"
+                image.src = "Weather-App/images/rain.png"
             }
             else if(dataToJson.weather[0].id >= 600  && dataToJson.weather[0].id <= 622){
-                image.src = "./images/snow.png"
+                image.src = "Weather-App/images/snow.png"
             }
             else if(dataToJson.weather[0].id >= 701  && dataToJson.weather[0].id <= 781){
-                image.src = "./images/haze.png"
+                image.src = "Weather-App/images/haze.png"
             }
             else if(dataToJson.weather[0].id == 800){
-                image.src = "./images/clear.png"
+                image.src = "Weather-App/images/clear.png"
             }
             else if(dataToJson.weather[0].id >= 801  && dataToJson.weather[0].id <= 804){
-                image.src = "./images/cloud.png"
+                image.src = "Weather-App/images/cloud.png"
             }
         }
        
