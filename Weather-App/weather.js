@@ -42,7 +42,7 @@ inputField.addEventListener("keyup" , function (event) {
 
  async function weatherApi(city){
     try {
-         const apiKey = // Yours API Key
+         const apiKey = "c85445b1281da3818a09c714c42fc2d5"
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
         const data = await fetch(url)
         const dataToJson = await data.json()
